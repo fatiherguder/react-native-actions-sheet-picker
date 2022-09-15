@@ -38,6 +38,7 @@ export const Picker = <T,>({
   searchInputProps,
   flatListProps,
   actionsSheetProps,
+  itemTextColor = '#333333',
   renderListItem,
 }: PickerProps<T>) => {
   const [selectedKey, setSelectedKey] = useState(null);
@@ -62,7 +63,7 @@ export const Picker = <T,>({
         setSelectedKey(index);
       }}
     >
-      <Text style={{ fontWeight: selectedKey !== index ? 'normal' : 'bold' }}>
+      <Text style={{ fontWeight: selectedKey !== index ? 'normal' : 'bold', color: itemTextColor }}>
         {item.name ? item.name : null}
       </Text>
     </TouchableOpacity>
