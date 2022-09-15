@@ -28,7 +28,7 @@ export const Picker = <T,>({
   searchable = false,
   loading = false,
   label,
-  height = Math.floor(Dimensions.get('window').height * 0.5),
+  height = Dimensions.get('window').height * 0.5,
   closeText = 'Close',
   placeholderText = 'Search',
   noDataFoundText = 'No Data Found.',
@@ -136,7 +136,7 @@ export const Picker = <T,>({
                       onClose();
                     }}
                   >
-                    <Text style={{color: '#333'}}>{closeText}</Text>
+                    <Text>{closeText}</Text>
                   </TouchableOpacity>
                 </View>
               ) : null}
@@ -171,7 +171,7 @@ export const Picker = <T,>({
                     paddingTop: 20,
                   }}
                 >
-                  <Text style={{color: '#333'}}>{noDataFoundText}</Text>
+                  <Text>{noDataFoundText}</Text>
                 </View>
               );
             }

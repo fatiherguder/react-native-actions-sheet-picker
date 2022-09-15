@@ -27,6 +27,18 @@ or
 npm install react-native-actions-sheet-picker
 ```
 
+## Install Dependencies
+
+Please, install dependencies for using this package.
+
+```sh
+yarn add react-native-actions-sheet
+```
+
+```sh
+yarn add react-native-gesture-handler
+```
+
 ## Usage
 
 ```jsx
@@ -131,8 +143,8 @@ const styles = StyleSheet.create({
 
 ## Method
 
-| Properties               | Type       | Description                           |
-| ------------------------ | ---------- | ------------------------------------- |
+| Properties               | Type       | Description                           | 
+| ------------------------ | ---------- | ------------------------------------- | 
 | **onOpen**               | `function` | SheetManager show                     |
 | **onClose**              | `function` | SheetManager hide                     |
 
@@ -141,15 +153,13 @@ const styles = StyleSheet.create({
 
 | Properties           | Type     | Description                                                                                                          |
 | -------------------- | -------- | -------------------------------------------------------------------------------------------------------------------- |
-| **actionsSheetProps** | `object` | [react-native-actions-sheet](https://github.com/ammarahm-ed/react-native-actions-sheet 'react-native-actions-sheet') |     |
+| **actionsShetProps** | `object` | [react-native-actions-sheet](https://github.com/ammarahm-ed/react-native-actions-sheet 'react-native-actions-sheet') |     |
 | **flatListProps**    | `object` | [FlatListProps](https://reactnative.dev/docs/flatlist 'FlatListProps')                                               |     |
 | **searchInputProps** | `object` | [TextInputProps](https://reactnative.dev/docs/textinput 'TextInputProps')                                            |     |
 
 ## Roadmap
 
  * [ ] Multiple select
- * [ ] Issue 3 (https://github.com/Bur0/react-native-actions-sheet-picker/issues/3)
- * [ ] Issue 4 (https://github.com/Bur0/react-native-actions-sheet-picker/issues/4)
  * [x] renderListItem | props
  * [x] Selected highlight
 
