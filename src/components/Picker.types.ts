@@ -22,6 +22,7 @@ export type PickerProps<T> = {
   searchInputProps?: TextInputProps;
   flatListProps?: FlatListProps<T>;
   actionsSheetProps?: ActionSheetProps;
+  itemTextColor?: string;
 } & (T extends { name: string }
   ? Partial<RenderItemProp<T>>
   : RenderItemProp<T>);
